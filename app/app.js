@@ -14,7 +14,7 @@ var app = http.createServer(function(req, res) {
 var io = socketServer.listen(app);
 
 var spawn = require('child_process').spawn,
-    ls = spawn('python',['main.py', "/dev/pts/22"]);
+    ls = spawn('python',['main.py', "/dev/ttyUSB0"]);
 
 ls.stdout.on('data', function (data) {
     console.log('stdout: ' + data);

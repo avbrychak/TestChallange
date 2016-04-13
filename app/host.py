@@ -143,8 +143,8 @@ class Host(object):
         """
 
         ser = serial.Serial(
-            #port=portname,
-            port = "/dev/ttyUSB0",
+            port=portname,
+            # port = "/dev/ttyUSB0",
             baudrate=9600,
             bytesize=serial.SEVENBITS,
             parity=serial.PARITY_EVEN,

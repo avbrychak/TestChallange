@@ -107,5 +107,5 @@ def main(portname):
 
 
 if __name__ == "__main__":
-    #main(sys.argv[1])
-    main('/dev/ttyUSB0')
+    main(sys.argv[1])
+    # main('/dev/ttyUSB0')
